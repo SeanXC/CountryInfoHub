@@ -9,10 +9,6 @@ CountryInfoHub is a full-stack application that allows users to input a country 
 - [Setup Instructions](#setup-instructions)
 - [Running the Application](#running-the-application)
   - [Using Docker](#using-docker)
-- [Deployment](#deployment)
-- [Testing](#testing)
-- [Error Handling](#error-handling)
-- [Future Enhancements](#future-enhancements)
 
 ## Technologies Used
 - **Frontend:** React, Axios
