@@ -5,7 +5,6 @@ CountryInfoHub is a full-stack application that allows users to input a country 
 ## Table of Contents
 - [Technologies Used](#technologies-used)
 - [Features](#features)
-- [File Structure](#file-structure)
 - [Setup Instructions](#setup-instructions)
 - [Running the Application](#running-the-application)
   - [Using Docker](#using-docker)
@@ -13,7 +12,7 @@ CountryInfoHub is a full-stack application that allows users to input a country 
 ## Technologies Used
 - **Frontend:** React, Axios
 - **Backend:** Node.js, Express, Axios
-- **Deployment:** (e.g., Vercel, Render)
+- **Deployment:** (Docker)
 
 ## Features
 - Allows users to input a country name to search for.
@@ -21,12 +20,9 @@ CountryInfoHub is a full-stack application that allows users to input a country 
 - Displays country details like name, population, region, and more.
 - Handles loading states and errors gracefully.
 
-## File Structure
-The project is structured with separate directories for the frontend and backend.
-
 ## Setup Instructions
 
-Follow **3** steps to set up the backend and frontend for the project.
+Follow **3** steps to run the application on your Command Prompt.
 
 ### 1. Backend Setup:
 1. **Navigate to the `backend` directory:**
@@ -39,7 +35,7 @@ Follow **3** steps to set up the backend and frontend for the project.
    ```bash
    npm start
    
-## 2. Frontend Setup:
+### 2. Frontend Setup:
 1. **Navigate to the `frontend` directory:**
    ```bash
    cd frontend
@@ -49,12 +45,12 @@ Follow **3** steps to set up the backend and frontend for the project.
 3. **Start the backend server:**
    ```bash
    npm start
-## 3. Access the Application:
-**Open your browser** and visit the following URL to use the app:
+### 3. Running the Application:
+visit the following URL to use the app:
    [http://localhost:3000](http://localhost:3000)
 
 
-### Using Docker
+## Using Docker
 Follow **4** steps to run the application using Docker.
 
 1. **Navigate to the project root directory** (where your `docker-compose.yml` file is located):
