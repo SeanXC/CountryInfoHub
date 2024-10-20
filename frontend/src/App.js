@@ -8,6 +8,9 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
 
+  // Use the backend URL from environment variable or default to localhost
+  const backendUrl = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
+
   const handleInputChange = (event) => {
     setCountry(event.target.value);
   };
@@ -18,7 +21,8 @@ function App() {
     setError('');
     setCountryData(null);
     try {
-      const response = await axios.get(`http://localhost:5000/api/country/${country}`);
+      // Fetch data from the backend
+      const response = await axios.get(`${backendUrl}/api/country/${country}`);
       setCountryData(response.data[0]);
     } catch (err) {
       setError('Error fetching country data');
